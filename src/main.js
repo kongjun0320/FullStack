@@ -6,6 +6,19 @@ import './plugins'
 
 Vue.config.productionTip = false
 
+// 路由全局守卫
+router.beforeEach((to, from, next) => {
+  console.log('beforeEach')
+  // console.log(to)
+  // console.log(from)
+  next()
+})
+router.beforeResolve((to, from, next) => {
+  next()
+})
+router.afterEach((to, from, next) => {
+
+})
 new Vue({
   router,
   store,
