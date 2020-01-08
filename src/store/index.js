@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import countStore from './modules/count'
-import numberStore from './modules/number'
+import userStore from './modules/user'
+import goodStore from './modules/goods'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   modules: {
-    countStore,
-    numberStore
+    userStore,
+    goodStore
   }
 })
